@@ -8,6 +8,11 @@
 
 # Test data
 
+Setting(singleton):
+    title:          javathought - java web log
+    brand:          Java Thoughts
+    tagline:        Just another java weblog
+
 User(bob):
     email:          bob@gmail.com
     password:       E5E9FA1BA31ECD1AE84F75CAAA474F3A663F05F4

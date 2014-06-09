@@ -1,5 +1,8 @@
 package models;
 
+import play.db.jpa.Model;
+import javax.persistence.Entity;
+
 /**
  * Created with IntelliJ IDEA.
  * User: pascalabaziou
@@ -7,5 +10,11 @@ package models;
  * Time: 10:29
  * To change this template use File | Settings | File Templates.
  */
-public class Setting {
+@Entity
+public class Setting extends Model {
+
+    public String title;
+    public String brand;
+    public String tagline;
+
 }
