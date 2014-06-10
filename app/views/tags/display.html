@@ -1,22 +1,19 @@
 *{ Display a post in one of these modes: 'full', 'home' or 'teaser' }*
 
-<!-- div class="post ${_as == 'teaser' ? 'teaser' : ''}">
+<div class="post ${_as == 'teaser' ? 'teaser' : ''}">
     <h2 class="post-title">
-        <a href="#">${_post.title}</a>
+        <a href="@{Application.show(_post.id)}">${_post.title}</a>
     </h2>
     <div class="post-metadata">
-        <span class="post-author">by ${_post.author.fullname}</span -->
 
         <section class="post  ${_as == 'teaser' ? 'teaser' : ''}">
             <header class="post-header">
                 <img class="post-avatar" alt="Tilo Mitra&#x27;s avatar" height="48" width="48"
-                     src="@{'/public/images/common/tilo-avatar.png'}">
-
-                <h2 class="post-title">${_post.title}</h2>
+                     src="@{'/public/images/common/'}/${_post.author.avatar}">
 
                 <p class="post-meta">
                     By <a href="#" class="post-author">${_post.author.fullname}</a>
-                        <span class="post-date">${_post.postedAt.toString("dd:MM:yy")}</span> under
+                        <span class="post-date">${_post.postedAt.toString("dd MMM yy")}</span> under
                     <a class="post-category post-category-design" href="#">CSS</a>
                     <a class="post-category post-category-pure" href="#">Pure</a>
                 #{if _as != 'full'}
@@ -42,6 +39,10 @@
         </section>
 </div>
 
+#{if flash.success}
+    <p class="success">${flash.success}</p>
+#{/if}
+
 #{if _as == 'full'}
 <div class="comments">
     <h3>
@@ -54,7 +55,7 @@
             <div class="comment-metadata">
                 <span class="comment-author">by ${comment.author},</span>
                     <span class="comment-date">
-                        ${comment.postedAt.format('dd MMM yy')}
+                        ${comment.postedAt.toString("dd MMM yy")}
                     </span>
             </div>
             <div class="comment-content">

@@ -27,6 +27,10 @@
     <link rel="stylesheet" href="@{'/public/stylesheets/pure/layouts/blog.css'}">
     <!--<![endif]-->
 
+    <script src="@{'/public/javascripts/jquery-1.6.4.min.js'}"></script>
+    <!-- script src="@{'/public/javascripts/jquery.tools-1.2.7.expose.min.js'}"></script -->
+    <script src="http://cdn.jquerytools.org/1.2.7/full/jquery.tools.min.js"></script>
+
 
 </head>
 <body>
@@ -35,17 +39,17 @@
     <div class="sidebar pure-u-1 pure-u-med-1-4">
         <div class="header">
             <hgroup>
-                <h1 class="brand-title">${setting.brand}</h1>
+                <h1 class="brand-title"><a href="@{Application.index()}">${setting.brand}</a></h1>
                 <h2 class="brand-tagline">${setting.tagline}</h2>
             </hgroup>
 
             <nav class="nav">
                 <ul class="nav-list">
                     <li class="nav-item">
-                        <a class="pure-button" href="http://purecss.io">Pure</a>
+                        <a class="pure-button" href="http://twitter.com/javathought">@javathought</a>
                     </li>
                     <li class="nav-item">
-                        <a class="pure-button" href="http://yuilibrary.com">YUI Library</a>
+                        <a class="pure-button" href="http://plus.google.com/pascal.abaziou">google+</a>
                     </li>
                 </ul>
             </nav>

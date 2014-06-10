@@ -18,11 +18,13 @@ User(bob):
     password:       E5E9FA1BA31ECD1AE84F75CAAA474F3A663F05F4
     fullname:       Bob
     isAdmin:        true
+    avatar:         tilo-avatar.png
 
 User(jeff):
     email:          jeff@gmail.com
     password:       E5E9FA1BA31ECD1AE84F75CAAA474F3A663F05F4
     fullname:       Jeff
+    avatar:         andrew-avatar.png
 
 Post(firstBobPost):
     title:          About the model layer
