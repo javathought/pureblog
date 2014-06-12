@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="96c60082-28b8-4aa3-8e1e-4bb9ec9c6378" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/conf/log4j.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/Application.java" afterPath="$PROJECT_DIR$/app/controllers/Application.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/conf/application.conf" afterPath="$PROJECT_DIR$/conf/application.conf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pureblog.iws" afterPath="$PROJECT_DIR$/pureblog.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/conf/routes" afterPath="$PROJECT_DIR$/conf/routes" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/Application/show.html" afterPath="$PROJECT_DIR$/app/views/Application/show.html" />
     </list>
     <ignored path="pureblog.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,6 +25,7 @@
     <file path="/blog.css" changelist="96c60082-28b8-4aa3-8e1e-4bb9ec9c6378" time="1402436422468" ignored="false" />
     <file path="/show.html" changelist="96c60082-28b8-4aa3-8e1e-4bb9ec9c6378" time="1402531899478" ignored="false" />
     <file path="/log4j.properties" changelist="96c60082-28b8-4aa3-8e1e-4bb9ec9c6378" time="1402615463725" ignored="false" />
+    <file path="/.gitignore" changelist="96c60082-28b8-4aa3-8e1e-4bb9ec9c6378" time="1402616124701" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,13 +86,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Application.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Application.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/Application.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="58" selection-start="1565" selection-end="1565" vertical-scroll-proportion="0.5816733">
+            <state line="46" column="58" selection-start="1565" selection-end="1565" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="15" selection-start="53" selection-end="53" vertical-scroll-proportion="0.0996016">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -190,7 +196,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/test/BasicTest.java" />
         <option value="$PROJECT_DIR$/app/Bootstrap.java" />
         <option value="$PROJECT_DIR$/app/models/Setting.java" />
         <option value="$PROJECT_DIR$/app/views/Application/index.html" />
@@ -206,6 +211,7 @@
         <option value="$PROJECT_DIR$/conf/log4j.properties" />
         <option value="$PROJECT_DIR$/conf/application.conf" />
         <option value="$PROJECT_DIR$/app/controllers/Application.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -643,11 +649,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/models/Comment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="114" selection-end="147" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/Post.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="55" column="5" selection-start="1406" selection-end="1406" vertical-scroll-proportion="0.0" />
@@ -742,10 +743,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/Application.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="58" selection-start="1565" selection-end="1565" vertical-scroll-proportion="0.5816733">
+        <state line="46" column="58" selection-start="1565" selection-end="1565" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="15" selection-start="53" selection-end="53" vertical-scroll-proportion="0.0996016">
+          <folding />
         </state>
       </provider>
     </entry>
