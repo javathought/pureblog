@@ -13,7 +13,13 @@
 
                 <p class="post-meta">
                     By <a href="#" class="post-author">${_post.author.fullname}</a>
-                        <span class="post-date">${_post.postedAt.toString("dd MMM yy")}</span> under
+                        <span class="post-date">${_post.postedAt.toString("dd MMM yy")}</span>
+                        #{if _post.tags}under
+                            #{list items:_post.tags, as:'tag'}
+                                <a class="post-category post-category-design"
+                                    href="@{Application.listTagged(tag.name)}">${tag}</a>${tag_isLast ? '' : ' '}
+                            #{/list}
+                        #{/if}
                     <a class="post-category post-category-design" href="#">CSS</a>
                     <a class="post-category post-category-pure" href="#">Pure</a>
                 #{if _as != 'full'}
