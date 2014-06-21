@@ -1,7 +1,7 @@
 #{extends 'main.html' /}
 #{set title:post.title /}
 
-<ul id="pagination">
+<ul id="pagination" class="pager">
 #{if post.previous()}
     <li id="previous">
         <a href="@{Application.show(post.previous().id)}">

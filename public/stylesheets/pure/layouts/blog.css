@@ -232,7 +232,7 @@ h3 span {
 }
 
 #pagination #previous:before {
-    content: '<< ';
+    content: '\2190 ';
 }
 
 #pagination #next {
@@ -242,7 +242,7 @@ h3 span {
 }
 
 #pagination #next:after {
-    content: ' >>';
+    content: ' \2192';
 }
 
 /** Form **/

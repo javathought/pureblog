@@ -2,6 +2,8 @@ package models;
 
 import org.hibernate.annotations.Type;
 import org.joda.time.DateTime;
+import play.data.validation.Required;
+import play.data.validation.MaxSize;
 import play.db.jpa.Model;
 
 import javax.persistence.*;
@@ -21,13 +23,19 @@ import java.util.TreeSet;
 @Table(name="pb_post")
 public class Post extends Model{
 
+    @Required
     public String title;
+
+    @Required
     @Type(type="org.joda.time.contrib.hibernate.PersistentDateTime")
     public DateTime postedAt;
 
     @Lob
+    @Required
+    @MaxSize(10000)
     public String content;
 
+    @Required
     @ManyToOne
     public User author;
 
@@ -79,4 +87,7 @@ public class Post extends Model{
         ).bind("tags", tags).bind("size", tags.length).fetch();
     }
 
+    public String toString() {
+        return title;
+    }
 }

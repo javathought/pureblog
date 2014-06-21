@@ -1,5 +1,7 @@
 package models;
 
+import play.data.validation.Email;
+import play.data.validation.Required;
 import play.db.jpa.Model;
 
 import javax.persistence.Entity;
@@ -18,7 +20,10 @@ import java.security.NoSuchAlgorithmException;
 @Entity
 @Table(name="pb_user")
 public class User extends Model{
+    @Email
+    @Required
     public String email;
+    @Required
     public String password;
     public String fullname;
     public boolean isAdmin;
@@ -46,5 +51,9 @@ public class User extends Model{
             return password;
         }
 
+    }
+
+    public String toString() {
+        return fullname;
     }
 }

@@ -2,6 +2,8 @@ package models;
 
 import org.hibernate.annotations.Type;
 import org.joda.time.DateTime;
+import play.data.validation.MaxSize;
+import play.data.validation.Required;
 import play.db.jpa.Model;
 
 import javax.persistence.Entity;
@@ -18,13 +20,19 @@ import javax.persistence.ManyToOne;
 @Entity
 public class Comment extends Model{
 
+    @Required
     public String author;
+
+    @Required
     @Type(type="org.joda.time.contrib.hibernate.PersistentDateTime")
     public DateTime postedAt;
 
     @Lob
+    @Required
+    @MaxSize(10000)
     public String content;
 
+    @Required
     @ManyToOne
     public Post post;
 
